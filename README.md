@@ -1,7 +1,22 @@
 Simple password breach checker that uses Have I Been Pwned API. It's 100% safe to check any password since this script never send your password to anywhere, you can check source at check.rb. For more details about how it works, please refeer to [HaveIBeenPwned Api Docs](https://haveibeenpwned.com/API/v2#SearchingPwnedPasswordsByRange)
 
 ## Usage
-You need ruby and rest-client gem installed. If you don't have ruby at your machine, please refeer to ruby official docs.  
+You need ruby and rest-client gem installed. If you don't have ruby at your machine, please refeer to ruby official docs.
+
+### With Docker
+
+```
+$ docker build . -t rbeenpwned
+$ docker run -it rbeenpwned
+```
+
+Or just chain commands  
+```
+$ docker build . -t rbeenpwned && docker run -it rbeenpwned
+```
+
+### Without Docker
+
 To install rest-client just run bundle:
 
 > $ bundle
